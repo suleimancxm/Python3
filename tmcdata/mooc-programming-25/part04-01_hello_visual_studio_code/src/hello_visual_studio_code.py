@@ -1,9 +1,10 @@
-# Write your solution here
 while True:
     editor = input("Editor: ")
-    if editor.lower() == "visual studio code":
+    editor_lower = editor.lower()
+    if editor_lower in ["emacs", "vim", "atom"]:
+        print("not good")
+    elif editor_lower == "visual studio code":
         print("an excellent choice!")
-    elif editor in ['notepad', 'smac']:
-        print("not good!")
+        break
     else:
         print("awful")    
