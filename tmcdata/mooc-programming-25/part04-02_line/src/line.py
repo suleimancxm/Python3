@@ -1,8 +1,10 @@
-# Write your solution here
 def line(length, char):
-    if length <= 0:
-        return ""
-    return char * length
-# You can test your function by calling it within the following block
+    if char == "":
+        print("*" * length)
+    else:
+        print(char[0] * length)
+
 if __name__ == "__main__":
-    line(5, "x")
+    line(3, "%")
+    line(7, "Sulaiman")
+    line(4, "")
